@@ -1,0 +1,157 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
+:root{
+    /* primary color */
+    --violet : #7541c8;
+    --dark-blue: #48556a;
+    --blakish-blue:  #19212e;
+    --white:#ffffff;
+    /* Neautral color */
+    --Light-grey:#cfcfcf;
+    --Light-greyish-blue: #ecf2f8;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:var(--white);
+    background-color: var(--Light-grey);
+    height:100vh;
+    
+}
+.section-head{
+    height:100%;
+    margin:5px;     
+}
+/* utility */
+small{
+    /* text-align:center; */
+    letter-spacing:  .5px;
+    font-size:20px;
+    font-weight:thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text{
+    margin-top:50px;
+    
+}
+.name{
+    margin-top:15px;    
+    margin-bottom: 2px;
+    font-size:20px;
+    font-weight:thin;
+    
+}
+.qualification{
+    margin-top:10px;
+    color:var(--blakish-blue);
+    opacity: .8;
+}
+
+/* flex */
+.flex{
+    display:flex;
+   gap: var(--gap, 1rem);
+}
+
+
+
+.container{
+    background-color: green;
+    /* margin-top:20px; */
+    border-radius:8px;
+    padding:20px;
+  margin: 2px 10px 18px 10px ;
+  grid-gap:20px;
+}
+.img{
+    border-radius:50%;
+    border:5px solid var(--violet)
+}
+.feedback{
+    color:var(--blakish-blue);
+    font-size: 25px;
+    font-weight: 540;
+}
+
+.card-1{
+ background-color: var(--violet);
+ grid-area: a;
+}
+
+.card-2{
+    
+    background-color: var(--dark-blue);
+    grid-area: b;
+}
+
+.card-3{
+    grid-area: c;
+    background-color: var(--white);
+    
+}
+
+.card-4{
+    grid-area: e;
+    background-color: var(--blakish-blue);
+    
+}
+
+.card-5{
+    grid-area: d;
+    background-color: var(--white);
+   
+    
+}
+.card-3  small,
+.card-5  small
+{
+    
+    color:var(--dark-blue);
+}
+.card-3  h4,
+.card-5  h4
+{
+    color:var(--dark-blue);
+}
+.card-3  header p,
+.card-5  header p
+{
+    color:var(--dark-blue);
+}
+
+/* Footer Section */
+.attribution { 
+    font-size: 16px;
+    text-align: center;
+ }
+.attribution a { 
+    list-style: none;
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+ }
+
+
+@media screen and (min-width:900px){
+    .section-head{
+ 
+        display: grid;
+        /* grid-gap: 15px; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+         "a a b c"
+        "d e e c" ;
+        /* grid-auto-flow: dense; */
+       
+       }
+}
+.card-1.position{
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+   background-position:top right 10%;
+}
