@@ -50,7 +50,7 @@ body{
 }
 .qualification{
     margin-top:10px;
-    color:var(--blakish-blue);
+    color:var(--Light-grey);
     opacity: .8;
 }
 
@@ -116,6 +116,7 @@ body{
 {
     color:var(--dark-blue);
 }
+
 .feedback{
    color:var(--blakish-blue)!important;
    font-size: 25px;
